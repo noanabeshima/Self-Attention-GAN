@@ -9,7 +9,7 @@ class Self_Attn(nn.Module):
     """ Self attention Layer"""
     def __init__(self,in_dim,activation):
         super(Self_Attn,self).__init__()
-        self.chanel_in = in_dim
+        self.channel_in = in_dim
         self.activation = activation
         
         self.query_conv = nn.Conv2d(in_channels = in_dim , out_channels = in_dim//8 , kernel_size= 1)
